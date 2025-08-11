@@ -13,7 +13,7 @@ int main()
     printf("Digite a hora (formato HH.MM): ");
     scanf("%f", &hora_real); 
 
-    hora = (int)hora_real; 
+    hora = (int)hora_real; //Transformar a hora real em inteiro para obter a parte inteira da hora.
     minuto = (int)((hora_real - hora) * 100); //Subtrai a parte inteira da hora_real e multiplica por 100 para obter os minutos.
 
     //Calcular a hora total em minutos 
