@@ -14,7 +14,7 @@ int main()
     scanf("%f", &hora_real); 
 
     hora = (int)hora_real; 
-    minuto = (int)((hora_real - hora) * 100); //Multiplicar por 100 achar os minutos certos. 
+    minuto = (int)((hora_real - hora) * 100); //Subtrai a parte inteira da hora_real e multiplica por 100 para obter os minutos.
 
     //Calcular a hora total em minutos 
     hora_total = (hora *  60) + minuto; //Primeiro multiplica a hora por 60 para converter em minutos e depois soma os minutos digitados para obter o total. 
