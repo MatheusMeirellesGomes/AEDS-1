@@ -5,9 +5,9 @@ int main()
     //incializar o programa colocando os dados do enunciado.
     float sal_atual, novo_sal, grat, imposto;
 
-    //receber o salário do funcionário
+    //receber o salário do funcionário 
     printf("Digite o salario base do funcionario: R$ ");
-    scanf("%f", &sal_atual);
+    scanf("%f", &sal_atual); 
 
     //calcular e mostrar o salario a receber com a gratificação e o imposto
     imposto = sal_atual * 10/100; // esse calculo do imposto foi para saber a quantidade total de imposto com base no salário atual, podendo ser 0.10
