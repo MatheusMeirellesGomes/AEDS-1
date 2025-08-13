@@ -51,15 +51,15 @@ int main()
     }
     else if(opcao == 4)
     {
-        if(n1 > n2)
-        {
-            divisao = n1 / n2;  
-            printf("A divisao entre eles = %.2f", divisao); 
-        }
-        else
-        {
-            printf("\nOpcao Invalida");
-        }
+       if (n2 != 0)
+       {
+        divisao = n1 / n2; 
+        printf("Divisao = %.2f", divisao);
+       }
+       else
+       {
+        printf("\nNao existe divisao por zero\n");
+       }
         
     }
     else
