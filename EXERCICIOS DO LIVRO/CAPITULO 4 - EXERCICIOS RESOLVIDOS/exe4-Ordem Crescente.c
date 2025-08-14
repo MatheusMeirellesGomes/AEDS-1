@@ -30,7 +30,7 @@ int main()
              printf("\nA ordem crescente = %d, %d, %d\n", n2, n1, n3); //Verificar se o primeiro é maior que o terceiro. 
         }
         else{
-            printf("\nA ordem crescente = %d, %D-d, %d\n", n2, n3, n1);//Se não for, inverter a ordem do primeiro e o terceiro número.
+            printf("\nA ordem crescente = %d, %d, %d\n", n2, n3, n1);//Se não for, inverter a ordem do primeiro e o terceiro número.
         }
     }
     else if(n3 > n1 && n3 > n2)//Verificar terceiro número.
