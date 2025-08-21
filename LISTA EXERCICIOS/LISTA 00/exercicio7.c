@@ -6,12 +6,12 @@ int main()
     //Inicializar Variáveis.
     int a1, a5, razao; 
 
-    //Receber informações necessárias. 
-    printf("Digite o primeiro termo: "); 
-    scanf("%d", &a1); 
-
+    //Receber informações necessárias.
     printf("Digite a razao: "); 
     scanf("%d", &razao); 
+
+    printf("Digite o primeiro termo: "); 
+    scanf("%d", &a1); 
 
     //Calcular para achar o quinto termo da PG. 
     a5 = a1 * pow(razao,4); //quinto termo = primeiro termo multiplicado pela quarta potência da razão. 

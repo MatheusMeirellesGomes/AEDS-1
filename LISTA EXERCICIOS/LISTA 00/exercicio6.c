@@ -6,11 +6,11 @@ int main()
     int a1, razao, a10; 
 
     //Receber informações: 
-    printf("Digite o primeiro termo: "); 
-    scanf("%d", &a1); 
-
     printf("Digite a razao da PA: ");
-    scanf("%d", &razao); 
+    scanf("%d", &razao);
+    
+    printf("Digite o primeiro termo: "); 
+    scanf("%d", &a1);  
 
     //Calcular Progressão e mostrar o décimo termo.
     a10 = a1 + (10 - 1) * razao; //O cálculo para achar o 10º termo é a soma do primeiro pela diferenã do N - 1 multiplicado pela razão; 
