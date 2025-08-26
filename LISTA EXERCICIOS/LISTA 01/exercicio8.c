@@ -19,7 +19,7 @@ int main()
     switch (opcao) //Usando switch conforme solicitado.
     {
         case 'A': //Seguindo a forma correta da estrutura switch, caso por caso.
-            aumento = sal_inicial * 0.8;
+            aumento = sal_inicial * 0.08;
             sal_final = sal_inicial + aumento;
             printf("Salario Final = R$ %.2f\n", sal_final);
             break;
