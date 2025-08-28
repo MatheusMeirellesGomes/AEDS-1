@@ -6,7 +6,7 @@ int main()
 {
     //Inicializar Variáveis.
     int N;  
-    float E = 1.0, fatorial, i, cont;  //E começa com 1, que é o primeiro termo da fórmula, i = contator do laço interno, j = contador do laço externo.
+    float E = 1.0, fatorial, i, cont;  //E começa com 1, que é o primeiro termo da fórmula, i = contator do laço interno, cont = contador do laço externo.
 
     //Receber valor de N. 
     printf("Digite um valor inteiro e positivo para N: "); 

@@ -1,0 +1,1 @@
+//Leia o número de termos e um valor positivo para X. Calcule e mostre o valor de s, conforme a fórmula a seguir: 
