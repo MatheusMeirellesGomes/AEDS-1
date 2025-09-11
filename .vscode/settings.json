@@ -1,3 +1,6 @@
 {
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "QUESTAO 2- LAB 02.C": "cpp"
+    }
 }
