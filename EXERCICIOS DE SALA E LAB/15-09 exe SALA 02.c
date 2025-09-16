@@ -68,7 +68,7 @@ int main()
     scanf("%f", &x); 
 
     //Puxar a função de escolha, que foi feita para verificar a escolha do usuário.
-    opcao = esoclha(); 
+    opcao = escolha(); 
     
     //Verificar o que for necessário fazer, puxando as funções de acordo com a opção do usuário, enquanto a opção 4 (sair), não for escolhida. 
     do

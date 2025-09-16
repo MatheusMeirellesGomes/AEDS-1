@@ -66,7 +66,7 @@ void processa () //Vai processar todas as informações das funções, ler, veri
             break; 
         case '/': 
             resposta = divide(num1, num2); 
-            if (resp == FLI_MIN){
+            if (resposta == FLI_MIN){
                 printf("\nDivisão por zero.\n");
             } 
             else {
@@ -84,7 +84,7 @@ void processa () //Vai processar todas as informações das funções, ler, veri
 int main ()
 {
     //Puxar o que esta fazendo no procedimento. 
-    void processa(); 
+    processa(); 
 
     return 0;
 }
