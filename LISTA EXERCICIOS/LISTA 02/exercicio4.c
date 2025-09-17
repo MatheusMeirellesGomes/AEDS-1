@@ -7,7 +7,7 @@ int main()
     double E = 1.0, fatorial;  //E começa com 1, que é o primeiro termo da fórmula, i = contator do laço interno, cont = contador do laço externo.
 
     //Receber valor de N.
-    //printf("Digite um valor inteiro e positivo para N: ");
+    printf("Digite um valor inteiro e positivo para N: ");
     scanf("%d", &N);
 
     //Calcular o valor de E.
