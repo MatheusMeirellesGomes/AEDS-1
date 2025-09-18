@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 //Receba e leia um Número N que indica quantos valores inteiros e positivos devem ser lidos, mostre uma tabela contendo o valor lido e o fatorial do valor lido.
 //Estrutura de Repetição.
 //Quando se tratar de fatorial, sempre tem que ter uma variável para armazenar o fatorial, que começa com 1 e um laço interno para calcular o fatorial.

@@ -7,13 +7,13 @@
 int main()
 {
     //Inicializar Variáveis. 
-    float x, y, z; 
+    float x, y, z; //lado 1, lado 2, lado 3.
 
     //Receber os valores de X, Y e Z. 
     printf("Informe o valor de X: "); 
     scanf("%f", &x); 
 
-    printf("informe o valor de Y: "); 
+    printf("informe o valor de Y: ");
     scanf("%f", &y); 
 
     printf("Informe o valor de Z: "); 

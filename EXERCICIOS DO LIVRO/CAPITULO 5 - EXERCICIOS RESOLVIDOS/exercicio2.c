@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 //Faça um programa que leia um valor de N inteiro e positivo, calcule e mostre o valor de E, conforme a fórmula a seguir: 
 //E = 1 + 1/1! + 1/2! + 1/3! + ... + 1/N!
 //Estrutura de Repetição. 

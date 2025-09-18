@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 //Receba o preço universitário, a refrigeração (S para os produtos que necessitem de refrigeração e N para os que não necessitem) e a categoria (A - alimentação;
 //L - Limpeza; V - Vestuário) de doze produtos. Calcule e mostre:
 //O imposto calculado de acordo com as regras a seguir: Se o produto não preencher nenhum dos requisitos a seguir, seu imposto será de 2% sobre o preço unitário,

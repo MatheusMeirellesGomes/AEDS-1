@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 //Um funcionário recebe anualmente, um aumento salarial. Sabe-se que: 
 //a) ELe foi contratado em 2005, com salário inicial de R$ 1000,00; 
 //b) Em 2006, ele recebeu um aumento de 1,5% sobre seu salário inicial; 

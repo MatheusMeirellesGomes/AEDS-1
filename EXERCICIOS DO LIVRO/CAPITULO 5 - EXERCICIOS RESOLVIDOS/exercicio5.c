@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 //Leia o número de termos e um valor positivo para X. Calcule e mostre o valor de s, conforme a fórmula a seguir: 
 //s = -x²/1! + x³/2! - x^4/3! + x^5/4! - x^6/3! + x^7/2! - x^8/1! + x^9/2! - x^10/3! + x^11/4!. 
 //Estrutura de Repetição. 

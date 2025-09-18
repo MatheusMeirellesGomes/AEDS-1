@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 //Uma estatística foi feita em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram obtidos os seguintes dados:
 //a) Código da cidade; b) Número de veículos de passeio; c) Número de acidentes de trânsito com vítimas.
 //Deseja-se saber:
