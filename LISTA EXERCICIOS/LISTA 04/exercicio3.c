@@ -1,17 +1,11 @@
 int soma(int n)
 {
-    //Inicialzar Variáveis. 
-    int resposta;
     //Indicar caso base. 
     if (n == 1){
         return 1; 
     }
     else {
-        for (int cont = 1; cont <= n; cont++)
-        {
-             resposta += cont; 
-        }
-        return resposta; 
+        return n + soma(n - 1); 
     }
 }
 int main()
