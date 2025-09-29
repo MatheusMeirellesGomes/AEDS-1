@@ -2,6 +2,7 @@
 #include <stdlib.h>
 int main()
 {
+    //Inicializar Variáveis.
     int valor = 10; 
     int *valorPtr = &valor; //Conteúdo do ponteiro está atribuído ao endereço de valor. 
 
