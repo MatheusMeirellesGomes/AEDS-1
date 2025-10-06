@@ -8,21 +8,25 @@ int ordena(int *a, int *b, int *c)
     //Inicializar Variável auxiliar para fazer a troca.
     int aux;
 
+    // Verifica se todos os valores são iguais
     if (*a == *b && *b == *c){ //Se os três conteúdos forem iguais.
         return 1;
     }
     else {
         //Ordenar números conforme enunciado.
+        // Se o primeiro valor for maior que o segundo, troca eles
         if (*a > *b){
             aux = *a;
             *a = *b;
             *b = aux;
         }
+        // Se o primeiro valor for maior que o terceiro, troca eles
         if (*a > *c){
             aux = *a;
             *a = *c;
             *c = aux;
         }
+        // Se o segundo valor for maior que o terceiro, troca eles.
         if (*b > *c){
             aux = *b;
             *b = *c;
