@@ -9,24 +9,24 @@ int ordena(int *a, int *b, int *c)
     int aux;
 
     // Verifica se todos os valores são iguais
-    if (*a == *b && *b == *c){ //Se os três conteúdos forem iguais.
+    if (*a == *b && *b == *c){ //Se os três conteúdos forem iguais. Ex: 8 8 8. 
         return 1;
     }
     else {
         //Ordenar números conforme enunciado.
-        // Se o primeiro valor for maior que o segundo, troca eles
+        // Se o primeiro valor for maior que o segundo, troca eles. Ex: 7 2 8  ou 8 2 7 
         if (*a > *b){
             aux = *a;
             *a = *b;
             *b = aux;
         }
-        // Se o primeiro valor for maior que o terceiro, troca eles
+        // Se o primeiro valor for maior que o terceiro, troca eles. Ex: 8 2 7 ou 8 7 2.
         if (*a > *c){
             aux = *a;
             *a = *c;
             *c = aux;
         }
-        // Se o segundo valor for maior que o terceiro, troca eles.
+        // Se o segundo valor for maior que o terceiro, troca eles. Ex: 2 7 8 ou 2 8 7
         if (*b > *c){
             aux = *b;
             *b = *c;
