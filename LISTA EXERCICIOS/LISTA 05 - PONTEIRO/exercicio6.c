@@ -35,9 +35,7 @@ int ordena(int *a, int *b, int *c)
 
         return 0;
     }
-
 }
-
 int main()
 {
     //Inicializar Variáveis.
