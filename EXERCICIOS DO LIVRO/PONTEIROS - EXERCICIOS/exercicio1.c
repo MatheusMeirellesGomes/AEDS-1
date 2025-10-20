@@ -16,6 +16,9 @@ int main()
     int num;
     int *ptrnum = &num;
 
+    //Alocar memória usando malloc.
+    int *ptr = (int*) malloc(sizeof(int)); //Alocar memória para um intero; 
+
     //Receber número.
     printf("Informe um numero: ");
     scanf("%d", &num);
@@ -35,5 +38,8 @@ int main()
     printf("\nEndereco de num: %p", &num);
     printf("\nConteudo de num: %d\n", *ptrnum);
 
+
+    //Liberar memória.
+    free(ptr); //Toda vez que usar malloc, deve-se liberar a memória usando free(conteúdo). 
     return 0;
 }
