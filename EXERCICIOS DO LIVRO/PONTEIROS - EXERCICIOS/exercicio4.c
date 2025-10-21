@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-int converte (int *seg) //Recebe o endereço dos segundos informados na main. 
+//Como é procedimento e não retorna nada, usa-se void. 
+void converte (int *seg) //Recebe o endereço dos segundos informados na main. 
 {
     //Inicializar Variáveis.
     int minutos, horas, segundos, resto;
@@ -19,24 +20,19 @@ int converte (int *seg) //Recebe o endereço dos segundos informados na main.
 int main()
 {
     //Inicializar Variáveis.
-    int segundos; 
-
-    //Alocar dinaminamente memória para segundos.
-    int *ptrSeg = (int*) malloc(sizeof(int)); //Alocar memória para um inteiro. 
+    int segundos;
+    int *ptrseg  = &segundos;
 
     //Receber segundos.
     printf("Informe quantos segundos: "); //Entrada: 24.000 - vai mandar esse valor para a função. 
-    scanf("%d", ptrSeg); //Indicar o endereço de segundos inicializado com malloc porque é lá que vai ser armazenado o valor. 
+    scanf("%d", ptrseg); //Indicar o endereço de segundos inicializado com malloc porque é lá que vai ser armazenado o valor. 
 
     //Acionar procedimento.
-    converte(ptrSeg); //Passando o endereço de segundos pro procedimento. 
+    converte(ptrseg); //Passando o endereço de segundos pro procedimento. 
 
     //Informar endereço e conteúdo de segundos.
-    printf("\nEndereco de Segundos: %p\n", ptrSeg); 
-    printf("Conteudo de Segundos: %d\n", *ptrSeg); 
-
-    //Liberar memória.
-    free(ptrSeg);
+    printf("\nEndereco de Segundos: %p\n", ptrseg);
+    printf("Conteudo de Segundos: %d\n", *ptrseg);
 
     return 0;
 }
