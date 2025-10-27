@@ -4,11 +4,11 @@
 int main()
 {
     //Inicializar Variáveis. 
-    FILE *arq = fopen("C:\\Users\\Matheus Gomes\\Desktop\\texto.txt", "w"); //O 'w' é para criar o arquivo para escrita. 
+    FILE *arq = fopen("./texto.txt", "w"); //O 'w' é para criar o arquivo para escrita. 
     char caracter;
     
     //Receber texto do usuário e gravar no arquivo. 
-    printf("Digite um text (pressione enter para sair): "); 
+    printf("Digite um texto (pressione enter para sair): "); 
     scanf("%c", &caracter); //Vai ler o primeiro caractere digitado pelo usuário. 
     //Esse scanf deve ser sem espaço, para que ele leia o caracter de espaço(enter) também. 
 

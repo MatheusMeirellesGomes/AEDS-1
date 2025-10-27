@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 //Crie um programa que leia a quantidade de veículos que uma locadora de veículos possui e o valor que ela cobra por cada aluguel, 
 //mostrando as informações pedidas a seguir:
 //a) Sabendo-se que um terço dos veículos são alugados por mês, exiba o faturamento anual da locadora;

@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 //implemente um programa que abra o arquivo texto (criado no exercício anterior) e conte a
 //quantidade de caracteres ‘a’ que estão presentes nele. Imprima a quantidade na tela
 int main()

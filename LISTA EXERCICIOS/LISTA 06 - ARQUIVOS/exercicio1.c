@@ -3,7 +3,7 @@
 int main()
 {
     //Inicializar Variáveis.
-    FILE *arq = fopen("C:\\Users\\Matheus Gomes\\Desktop\\arquivo.txt", "w");
+    FILE *arq = fopen("./arquivo.txt", "w");
 
     //Imprimir 10 números no arquivo. 
     for (int qntd = 1; qntd <= 10; qntd++)
