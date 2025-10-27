@@ -6,22 +6,22 @@
 int main()
 {
     //Inicializar Variáveis.
-    int numero, maximo, minimo, qntdNumeros = 0, qntdAleatoria;
+    int numero, maximo, minimo, qntdNumeros = 0, qntdLinhas;
     float soma = 0, media;
 
     //Gerar números aleatórios.
     srand((unsigned)time(NULL)); //Inicializar gerador de números aleatórios.
 
     //Gerar quantidade aleatória de números entre 1 e 20
-    qntdAleatoria = 1 + rand() % 20;
+    qntdLinhas = 1 + (rand() % 20);
 
     //Criar arquivo para escrita com os números aleatórios.
     FILE *arqEscrita = fopen("./entrada.txt", "w");
 
     //Gerar números aleatórios e gravar no arquivo
-    for (int cont = 0; cont < qntdAleatoria; cont++) {
+    for (int cont = 0; cont < qntdLinhas; cont++) {
         //Gerar número aleatório entre 1 e 100.
-        numero = 1 + rand() % 100;
+        numero = 1 + (rand() % 100);
 
         //Imprimir os números gerados no arquivo.
         fprintf(arqEscrita, "%d\n", numero);
@@ -69,6 +69,15 @@ int main()
 
     //Fechar o arquivo.
     fclose(arq);
+
+    //Reabrir o arquivo para adicionar os resultados ao final do arquivo.
+    FILE *arqResultado = fopen("./entrada.txt", "a"); //Modo "a" para adicionar ao final do arquivo.
+    fprintf(arqResultado, "\nValor maximo: %d\n", maximo);
+    fprintf(arqResultado, "Valor minimo: %d\n", minimo);    
+    fprintf(arqResultado, "Media: %.2f\n", media);
+
+    //Fechar o arquivo.
+    fclose(arqResultado);
 
     return 0;
 }
