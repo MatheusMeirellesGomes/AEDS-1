@@ -6,7 +6,7 @@
 
 ### *Material completo da disciplina - 1º período de Ciência da Computação*
 
-**PUC Minas** | 2025
+**PUC Minas Lourdes** | 2025
 
 </div>
 
@@ -24,12 +24,13 @@ AEDS-1/
 ├── 📁 .vscode/                    # Configurações do VS Code
 │
 ├── 📁 EXERCICIOS DO LIVRO/
-│   ├── 📁 CAPITULO 3 - EXERCICIOS PROPOSTOS
-│   ├── 📁 CAPITULO 3 - EXERCICIOS RESOLVIDOS
-│   ├── 📁 CAPITULO 4 - EXERCICIOS PROPOSTOS
-│   ├── 📁 CAPITULO 4 - EXERCICIOS RESOLVIDOS
-│   ├── 📁 CAPITULO 5 - EXERCICIOS PROPOSTOS
-│   ├── 📁 CAPITULO 5 - EXERCICIOS RESOLVIDOS
+├   ├── 📁 ARQUIVOS - EXERCÍCIOS
+│   ├── 📁 CAPITULO 3 - EXERCICIOS PROPOSTOS BÁSICOS.
+│   ├── 📁 CAPITULO 3 - EXERCICIOS RESOLVIDOS BÁSICOS.
+│   ├── 📁 CAPITULO 4 - EXERCICIOS PROPOSTOS DE CONDICIONAIS.
+│   ├── 📁 CAPITULO 4 - EXERCICIOS RESOLVIDOS DE CONDICIONAIS.
+│   ├── 📁 CAPITULO 5 - EXERCICIOS PROPOSTOS DE REPETIÇÃO.
+│   ├── 📁 CAPITULO 5 - EXERCICIOS RESOLVIDOS DE REPETIÇÃO.
 │   ├── 📁 CAPITULO 8 - EXERCICIOS RESOLVIDOS
 │   └── 📁 PONTEIROS - EXERCICIOS
 │
@@ -48,8 +49,8 @@ AEDS-1/
     ├── 📁 LISTA 04 - RECURSIVIDADE
     ├── 📁 LISTA 05 - PONTEIRO
     ├── 📁 LISTA 06 - ARQUIVOS
-    ├── 📁 LISTA 07 - VETORES
-    ├── 📁 LISTA 08 - MATRIZ
+    ├── 📁 LISTA 07 - VETORES E MATRIZ
+    ├── 📁 LISTA 08 - 
     └── 📁 LISTA 09
 ```
 
@@ -74,8 +75,8 @@ AEDS-1/
 5. **Lista 04** - Recursividade
 6. **Lista 05** - Ponteiros
 7. **Lista 06** - Arquivos
-8. **Lista 07** - Vetores
-9. **Lista 08** - Matrizes
+8. **Lista 07** - Vetores e Matrizes.
+9. **Lista 08** - 
 10. **Lista 09** - Exercícios avançados
 
 ## 🛠️ Tecnologias e Ferramentas
