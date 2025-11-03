@@ -75,7 +75,7 @@ void exibeMatrizResultado(int mat[][6]) {
 }
 int main() {
     //Inicializar gerador de números aleatórios.
-    srand((unsigned int)time(NULL)); //Usar a função time() para inicializar o gerador de números aleatórios.
+    srand((unsigned)time(NULL)); //Usar a função time() para inicializar o gerador de números aleatórios.
 
     //Declarar as matrizes A, B, Soma e Diferença.
     int matrizA[4][6];

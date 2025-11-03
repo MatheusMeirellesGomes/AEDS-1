@@ -106,7 +106,7 @@ int main() {
     int matriz[5][5]; //Matriz 5 x 5.
 
     //Inicializar gerador de números aleatórios.
-    srand((unsigned int)time(NULL)); //Usar a função time() para inicializar o gerador de números aleatórios.
+    srand((unsigned)time(NULL)); //Usar a função time() para inicializar o gerador de números aleatórios.
 
     //Chamar procedimento para preencher a matriz.
     preencheMatriz(matriz);
