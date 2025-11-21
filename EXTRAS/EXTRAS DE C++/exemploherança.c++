@@ -94,11 +94,89 @@ class Aluno
         }
 }; //Não esquecer do ; no final da classe.
 
+//Usar herança para criar uma nova classe chamada AlunoGrad, que herda da classe Aluno. 
+class AlunoGrad : public Aluno {
+    private: 
+        string TCC; //Atributo específico apenas da classe AlunoGrad.
+
+    public: 
+        ALunoGrad () {
+            setTCC("Vazio"); //Usar o set para inicializar o TCC.
+        }
+
+        //Procedimento para alterar o TCC.
+        ALunoGrad(string nNome, int nIdade, float nAltura, string nTCC) : Aluno(nNome, nIdade, nAltura) {
+            setTCC(nTCC); //Usar o set para inicializar o TCC.
+            
+        }
+
+        //Procedimento para alterar o TCC.
+        void setTCC(string novo) {
+            //Verificar se o TCC é válido.
+            if (novo.length() > 3) { //Se o tamanho do TCC for maior que 3 caracteres, pode alterar o TCC.
+                TCC = novo; //Atualizar o TCC.
+            }
+
+            else {
+                cout << "ERRO: TCC invalido" << endl;
+            }
+        }
+
+        string getTCC() {
+            return TCC;
+        }
+
+        //Exibir os dados do aluno graduando, incluindo o TCC.
+        void exibir() {
+            Aluno :: exibir(); //Chamar o exibir da classe base (Aluno) para exibir os dados comuns.
+            cout << "Titulo do TCC: " << getTCC() << endl; //Exibir o TCC específico do AlunoGrad.
+        }
+};
+
+//Criar outra classe para um aluno mestrado (herdando da classe aluno). 
+class AlunoMestrado : public Aluno {
+    private: 
+        string Dissertacao; //Atributo específico apenas da classe AlunoMestrado. 
+
+    public: 
+        AlunoMestrado () {
+            setDissertacao("Vazio"); //Usar o set para inicializar o Dissertacao.
+        }
+
+        //Procedimento para alterar o TCC.
+        AlunoMestrado(string nNome, int nIdade, float nAltura, string nDissertacao) : Aluno(nNome, nIdade, nAltura) {
+            setDissertacao(nDissertacao); //Usar o set para inicializar o Dissertacao.
+            
+        }
+
+        //Procedimento para alterar a Dissertacao.
+        void setDissertacao(string novo) {
+            //Verificar se o TCC é válido.
+            if (novo.length() > 3) { //Se o tamanho do TCC for maior que 3 caracteres, pode alterar o TCC.
+                Dissertacao = novo; //Atualizar o TCC.
+            }
+
+            else {
+                cout << "ERRO: Nome da dissertacao invalido" << endl;
+            }
+        }
+
+        string getDissertacao() {
+            return Dissertacao;
+        }
+
+        //Exibir os dados do aluno graduando, incluindo o TCC.
+        void exibir() {
+            Aluno :: exibir(); //Chamar o exibir da classe base (Aluno) para exibir os dados comuns.
+            cout << "Titulo da Dissertacao: " << getDissertacao() << endl; //Exibir a Dissertacao específica do AlunoMestrado.
+        }
+};
+
 int main()
 {
     //Aluno = referencia a classe (construtor padrão). - Objeto = nome do objeto.
-    Aluno objeto;
-    Aluno turma[2]; //Criando um vetor de objetos da classe Aluno. 
+    AlunoMestrado objeto;
+    AlunoMestrado turma[2]; //Criando um vetor de objetos da classe Aluno. 
     //Caso fosse com alocação dinâmica, seria: Aluno *turma = new Aluno[2];
 
     //Acionando o procedimento exibir para mostrar os dados padrão do alun
@@ -106,7 +184,7 @@ int main()
 
     //Inicializar novos dados para o aluno. 
     string novoNome;
-    int novaIdade;
+    int novaIdade, novoTCC;
     float novaAltura;
 
     //Pedir informações ao usuário. 
@@ -117,10 +195,16 @@ int main()
     cin >> novaIdade;  //Como é inteiro e float, pode usar cin, normalmente, porque equivale ao uso do scanf. 
     cout << "Digite a altura: "; 
     cin >> novaAltura; 
+    fflush(stdin); //Limpar o buffer do teclado antes de ler uma string com espaços.
+    //cout << "Digite o titulo do TCC: ";
+    //getline(cin, novoTCC);
+    fflush(stdin); //Limpar o buffer do teclado antes de ler uma string com espaços.
+    cout << "Digite o titulo da Dissertacao: ";
+    getline(cin, novoDissertacao);
 
     //Inicializar os dados dos alunos do vetor. Aqui vc vai estar alterando os dados do aluno. 
     objeto.inicializaTudo(novoNome, novaIdade, novaAltura); //Escrever dessa forma para não precisar usar os sets individualmente. Ex: objeto.setNome(novoNome);
-
+    objeto.setDissertacao(novoDissertacao); //Usar o set para alterar o TCC.
     //Acionar o procedimento exibir para mostrar os novos dados do aluno.
     objeto.exibir();
 
@@ -137,9 +221,13 @@ int main()
         cin >> novaIdade;
         cout << "Digite a altura: ";
         cin >> novaAltura;
+        fflush(stdin); //Limpar o buffer do teclado antes de ler uma string com espaços.
+        cout << "Digite o titulo da Dissertacao: ";
+        getline(cin, novoDissertacao);
 
         //Receber nos dados dos alunos do vetor. 
         turma[cont].inicializaTudo(novoNome, novaIdade, novaAltura);
+        turma[cont].setDissertacao(novoDissertacao);
 
         //Exibir os dados dos alunos do vetor.
         turma[cont].exibir();
