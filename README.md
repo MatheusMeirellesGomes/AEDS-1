@@ -50,8 +50,8 @@ AEDS-1/
     ├── 📁 LISTA 05 - PONTEIRO
     ├── 📁 LISTA 06 - ARQUIVOS
     ├── 📁 LISTA 07 - VETORES E MATRIZ
-    ├── 📁 LISTA 08 - 
-    └── 📁 LISTA 09
+    ├── 📁 LISTA 08 - STRUCT
+    └── 📁 LISTA 09 - CLASSE (C++)
 ```
 
 ## 🎯 Conteúdo Abordado
@@ -75,9 +75,9 @@ AEDS-1/
 5. **Lista 04** - Recursividade
 6. **Lista 05** - Ponteiros
 7. **Lista 06** - Arquivos
-8. **Lista 07** - Vetores e Matrizes.
-9. **Lista 08** - 
-10. **Lista 09** - Exercícios avançados
+8. **Lista 07** - Vetores, Matrizes e strings. 
+9. **Lista 08** - structs
+10. **Lista 09** - Classes em c++. 
 
 ## 🛠️ Tecnologias e Ferramentas
 
@@ -130,10 +130,10 @@ nome_do_executavel.exe  # Windows
 - ✅ Recursividade
 - ✅ Ponteiros
 - ✅ Manipulação de arquivos
-- ✅ Vetores (em andamento)
-- ✅ Matrizes (em andamento)
-- 🔄 Structs (em breve)
-- 🔄 Introdução a C++ (em breve)
+- ✅ Vetores 
+- ✅ Matrizes 
+- ✅ Structs 
+- ✅ Classe (C++)
 
 ## 💡 Aprendizados
 
