@@ -1,24 +1,24 @@
 #include <iostream>
 using namespace std;
-//Você está desenvolvendo um programa para armazenar e exibir dados pessoais. Cada pessoa é representada por um objeto da classe Pessoa, que possui atributos 
-//como nome, idade e altura. Seu programa deve ser capaz de receber um número inteiro N e, em seguida, ler os dados de N pessoas. 
+//Você está desenvolvendo um programa para armazenar e exibir dados pessoais. Cada pessoa é representada por um objeto da classe Pessoa, que possui atributos
+//como nome, idade e altura. Seu programa deve ser capaz de receber um número inteiro N e, em seguida, ler os dados de N pessoas.
 //Após a leitura, deve imprimir os dados de cada pessoa.
 
-//Primeiro criar um classe chamada pessoa. 
+//Primeiro criar um classe chamada pessoa.
 class Pessoa {
-    //Definir atrbutos privados (informaçõees da pessoa). 
-    private: 
-        string nome; 
-        int idade; 
-        float altura; 
-    
-    //Definir métodos públicos (funções e procedimentos para manipular os atributos). 
-    public: 
-        //Procedimento para alterar o nome da pessoa. 
+    //Definir atrbutos privados (informaçõees da pessoa).
+    private:
+        string nome;
+        int idade;
+        float altura;
+
+    //Definir métodos públicos (funções e procedimentos para manipular os atributos).
+    public:
+        //Procedimento para alterar o nome da pessoa.
         void setNome(string novo_Nome) {
-            //Verificar se o nome tem mais de 2 caracteres. 
+            //Verificar se o nome tem mais de 2 caracteres.
             if (novo_Nome.length() > 2) {
-                nome = novo_Nome; //O nome (dado privado) recebe o novo nome (parâmetro do procedimento, informado pelo usuário). 
+                nome = novo_Nome; //O nome (dado privado) recebe o novo nome (parâmetro do procedimento, informado pelo usuário).
             }
 
             else {
@@ -26,14 +26,14 @@ class Pessoa {
             }
         }
 
-        //Função para retornar o nome da pessoa. 
+        //Função para retornar o nome da pessoa.
         string getNome () {
-            return nome; //Retornar o nome (dado privado). 
+            return nome; //Retornar o nome (dado privado).
         }
 
-        //Procedimento para alterar a idade da pessoa. 
+        //Procedimento para alterar a idade da pessoa.
         void setIdade (int nova_Idade) {
-            //Verificar se a idade é maior que 0. 
+            //Verificar se a idade é maior que 0.
             if (nova_Idade > 0) {
                 idade = nova_Idade; //Se a nova idade informada for maior que 0, atualizar a idade (dado privado).
             }
@@ -43,14 +43,14 @@ class Pessoa {
             }
         }
 
-        //Função para retornar a idade da pessoa. 
-        int getIdade () { 
+        //Função para retornar a idade da pessoa.
+        int getIdade () {
             return idade; //Retornar a idade (dado privado).
         }
 
-        //Procedimento para alterar a altura da pessoa. 
+        //Procedimento para alterar a altura da pessoa.
         void setAltura (float nova_Altura) {
-            //Verificar se a altura é maior que 0. 
+            //Verificar se a altura é maior que 0.
             if (nova_Altura > 0) {
                 altura = nova_Altura; //Se a nova altura informada for maior que 0, atualizar a altura (dado privado).
             }
@@ -65,68 +65,71 @@ class Pessoa {
             return altura; //Retornar a altura (dado privado).
         }
 
-        //Procedimento para inicializar os dados da pessoa. 
+        //Procedimento para inicializar os dados da pessoa.
         void inicializa (string nNome, int nIdade, float nAltura) {
-            //Inicializar os atributos usando os sets para validar os dados retornados. 
+            //Inicializar os atributos usando os sets para validar os dados retornados.
             setNome(nNome); //Vai acionar o procedimento setNome para inicializar o nome com o novo nome informado.
             setIdade(nIdade); //Vai acionar o procedimento setIdade para inicializar a idade com a nova idade informada.
-            setAltura(nAltura); //Vai acionar o procedimento setAltura para inicializar a altura com a nova altura informada. 
+            setAltura(nAltura); //Vai acionar o procedimento setAltura para inicializar a altura com a nova altura informada.
         }
 
         void exibir() {
-            //Imprimir os dados da pessoa. 
-            cout << "Nome: " << getNome() <<endl; 
-            cout << "Idade: " <<getIdade() << endl; 
+            //Imprimir os dados da pessoa.
+            cout << "Nome: " << getNome() <<endl;
+            cout << "Idade: " <<getIdade() << endl;
             cout << "Altura: " << getAltura() << endl;
         }
 };
 
 //Função principal do programa para receber e exibir os dados das pessoas.
-int main () 
+int main ()
 {
-    //Inicializar variável para receber o número de pessoas. 
-    int N; 
+    //Inicializar variável para receber o número de pessoas.
+    int N;
 
-    //Acionar classe pessoa para criar objetos.
-    Pessoa pessoas; 
+    //Receber o número de pessoas. Como é c++ , usar cout e cin.
+    cout << "Informe o numero de pessoas: ";
+    cin >> N;
 
-    //Receber o número de pessoas. 
-    printf("Informe o numero de pessoas: "); 
-    scanf("%d", &N); 
+    //Antes de alocar dinamicamente para não dar duplicidade de variável, é necessário limpar o buffer do teclado.
+    fflush(stdin); //Limpar o buffer do teclado.
 
     //Alocar dinamicamente um vetor de objetos da classe Pessoa com N posições.
-    Pessoa *pessoas = new Pessoa[N]; //Forma de alocação dinâmica em c++, mesma coisa que malloc em c. 
+    Pessoa *pessoas = new Pessoa[N]; //Forma de alocação dinâmica em c++, mesma coisa que malloc em c.
 
-    //Variáveis para receber os dados das pessoas. 
-    string novoNome; 
-    int novaIdade; 
-    float novaAltura; 
+    //Variáveis para receber os dados das pessoas.
+    string novoNome;
+    int novaIdade;
+    float novaAltura;
 
-    //Laço para receber os dados das N pessoas. 
+    //Laço para receber os dados das N pessoas.
     for (int cont = 0; cont < N; cont++) {
         //Limpar o buffer do teclado antes de ler uma string com espaços.
         fflush(stdin); //Apenas antes de ler uma string com espaços.
 
-        //Receber as informações do usuário. 
-        cout << Pessoa (cont + 1) << endl; //Imprimir o número da pessoa (cont + 1, porque cont começa do 0).
-        cout << "Digite seu nome completo: "; 
+        //Receber as informações do usuário.
+        cout << endl << "Pessoa " << (cont + 1) << endl; //Imprimir o número da pessoa (cont + 1, porque cont começa do 0).
+        cout << "Digite seu nome completo: ";
         getline (cin, novoNome); //Usar getline para ler strings com espaços.
 
-        cout << "Digite sua idade: "; 
-        cin >> novaIdade; 
+        cout << "Digite sua idade: ";
+        cin >> novaIdade;
 
-        cout << "Digite sua altura: "; 
-        cin >> novaAAltura;
+        cout << "Digite sua altura: ";
+        cin >> novaAltura;
 
-        //Inicializar os dados das pessoas do vetor. 
-        (pessoas + cont)->inicializa(novoNome, novaIdade, novaAltura); //Necessário inicializar dessa forma para cada posição do vetor dinâmico. 
+        //Inicializar os dados das pessoas do vetor.
+        (pessoas + cont)->inicializa(novoNome, novaIdade, novaAltura); //Necessário inicializar dessa forma para cada posição do vetor dinâmico.
         //Mesma coisa que: pessoas[cont].inicializa(novoNome, novaIdade, novaAltura);
     }
 
+    //Melhor visualização na hora de imprimir.
+    cout << endl << "Dados Exibidos conforme o numero de pessoa: " << endl;
+
     //Laço para exibir os dados das N pessoas.
     for (int cont = 0; cont < N; cont++) {
-        cout << "Pessoa " << (cont + 1) << endl; //Imprimir o número da pessoa (cont + 1, porque cont começa do 0).
-        (pessoas + cont)->exibir(); //Acionar o procedimento exibir para cada posição do vetor dinâmico. 
+        cout << endl << "Pessoa " << (cont + 1) << endl; //Imprimir o número da pessoa (cont + 1, porque cont começa do 0).
+        (pessoas + cont)->exibir(); //Acionar o procedimento exibir para cada posição do vetor dinâmico.
         //Mesma coisa que: pessoas[cont].exibir();
     }
 
@@ -134,5 +137,5 @@ int main ()
     delete[] pessoas; //Forma de liberar memória em c++ equivalente ao free() em c.
 
 
-    return 0; 
+    return 0;
 }
